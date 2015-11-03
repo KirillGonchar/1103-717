@@ -16,7 +16,7 @@ public class Example {
                 System.out.println("  5. for\n");
                 System.out.println("Choose one:");
                 choice = (char) System.in.read();
-
+if (choice == 10) choice = 0;
             } while (choice < '1' || choice > '5');
 
             System.out.println("\n");
