@@ -8,6 +8,7 @@ public class Example {
         for (int i = 0; i < 10; i++) {
             choice = 0;
             do {
+                System.out.println("\n");
                 System.out.println("Help on:");
                 System.out.println("  1. if");
                 System.out.println("  2. switch");
@@ -16,7 +17,7 @@ public class Example {
                 System.out.println("  5. for\n");
                 System.out.println("Choose one:");
                 choice = (char) System.in.read();
-if (choice == 10) choice = 0;
+                System.in.read();
             } while (choice < '1' || choice > '5');
 
             System.out.println("\n");
